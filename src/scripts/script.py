@@ -6,10 +6,10 @@ train_data_interval = ((364 / 2) * 24 * 60 * 60)
 global_member_events = defaultdict(lambda :[])
 global_events_info_map = defaultdict(lambda : defaultdict(lambda : defaultdict(lambda: 0.0)))
 
-def initialize(city):
+def initialize(citypath):
     global global_member_events
     global global_events_info_map
-    rsvp_json_file = open("../../crawler/cities/" + city + "/rsvp_events.json")
+    rsvp_json_file = open(citypath + "/rsvp_events.json")
     json_str = rsvp_json_file.read()
     event_members_map = json.loads(json_str)
 
@@ -19,7 +19,7 @@ def initialize(city):
         for member in member_ids:
             global_member_events[member].append(event)
 
-    events_json_file = open("../../crawler/cities/" + city + "/events_info.json")
+    events_json_file = open(citypath + "/events_info.json")
     json_str = events_json_file.read()
     global_events_info_map = json.loads(json_str)
 
@@ -49,7 +49,13 @@ def find_best_users(city, start_time, end_time, number_of_best_users):
 
     return sorted(member_events_map, key=member_events_map.get, reverse=True)[:number_of_best_users]
 
-
+def get_all_event_details_by_user_id(user_id):
+    global global_member_events
+    global global_events_info_map
+    event_to_info_map = {}
+    for event in global_member_events[user_id]:
+        event_to_info_map[event]  = global_events_info_map[event]
+    return event_to_info_map
 
 def main():
     cities = ['LCHICAGO', 'LSAN JOSE', 'LPHOENIX']
@@ -59,7 +65,7 @@ def main():
     timestamps = sorted(timestamps, reverse=True)
 
     for city in cities:
-        initialize(city)
+        initialize("../../crawler/cities/" + city)
         for t in timestamps:
             start_time = t - train_data_interval
             end_time = t + train_data_interval
@@ -68,6 +74,9 @@ def main():
             best_users = " ".join(best_users)
             f.write(best_users)
             f.close()
+    initialize('LCHICAGO')
+    # print len(get_rsvp_events_from_member_in_range('4445443', 1372639655, 1388450855, 'LCHICAGO'))
+    # print find_best_users('LCHICAGO', 1372639655, 1388450855, 10)
 
 if __name__ == "__main__":
     main()

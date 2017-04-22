@@ -112,10 +112,13 @@
                <a href="index.php">
                   <h2 style="color:black;">Meetup Event Recommender</h2>
                </a>
-               <h3>Data Dashboard</h3>
+               <h3>Get User Details</h3>
             </header>
-            <a href="user_details.php" class="button1" role="button">Get User Details By User Id</a>
-            <a href="event_details.php" class="button1" role="button">Get Event Details By Event Id</a>
+            <div class="input-group input-group-lg">
+               <span class="input-group-addon" id="sizing-addon1">UserId:</span>
+               <input type="text" name="text" class="form-control" id="styled" placeholder="Paste the user id and submit " aria-describedby="sizing-addon1">
+            </div>
+            <input type='submit' class="button1" id='smm2' name='submit' value='Search'>
          <style>
             #position {
             width:60%;
