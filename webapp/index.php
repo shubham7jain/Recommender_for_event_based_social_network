@@ -86,7 +86,7 @@
       </style>
       <div class="beta">
          <a href="index.php">
-            <img src="precis.png" alt="automaitc text summarizer beta version" height="65" width="80">
+            <img src="meetup.png" alt="event recommender" height="65" width="80">
          </a>
       </div>
       <style>
@@ -108,9 +108,9 @@
          <div class="container">
             <header>
                <a href="index.php">
-                  <h2 style="color:black;">Precis</h2>
+                  <h2 style="color:black;">Meetup Event Recommender</h2>
                </a>
-               <h3>Start generating your online summary</h3>
+               <h3>Start getting recommendations</h3>
             </header>
             <style type="text/css">
                .custombutton a{
@@ -118,31 +118,7 @@
                }
             </style>
 
-            <a href="url.php" class="button1" role="button">Summary by Url</a>
-            <a href="tex.php" class="button1" role="button">Summary by Text</a>
-<!--             <form onsubmit="return myFunction();" method='POST' action='index.php'>
-               <style>
-                  textarea#styled {
-                  width: 60%;
-                  height: 170px;
-                  padding: -25px;
-                  font-family: Tahoma, sans-serif;
-                  }
-               </style>
-               <textarea  name="text" placeholder="Paste your text article and click Summarize.. " id="styled"></textarea>
-               <script>
-                  function clear_textarea() {
-                     document.getElementById("styled").value = "";
-                  }
-                  
-               </script>
-               <br>
-               <br>
-               <input type="button" id="smm" value="Clear" class="button1" onclick="javascript:clear_textarea();">
-               <input type='submit' class="button1" id='smm2' name='submit' value='Summarize'>
-         </div> -->
-         <!-- </form> -->
-
+            <a href="data_dashboard.php" class="button1" role="button">Data Dashboard</a>
          <style>
             #position {
             width:60%;
@@ -179,26 +155,6 @@
          <center>
          <p></p>
          <hr />
-         <div class="row">
-            <section class="4u">
-               <span class="pennant"><span class="fa fa-globe"></span></span>
-               <h3>Precis</h3>
-               <p>Summarize your articles, splitting the most important sentences and ranking a sentence based on importance.</p>
-               <a href="https://github.com/shubham7jain/precis" class="button button-style1">Read More</a>
-            </section>
-            <section class="4u">
-               <span class="pennant"><span class="fa fa-lock"></span></span>
-               <h3>API</h3>
-               <p>This tool is accessible by an API, integrate our api to generate summaries for a given text on your website or application.</p>
-               <a href="" target="_blank" class="button button-style1">Read More</a>
-            </section>
-            <section class="4u">
-               <span class="pennant"><span class="fa fa-globe"></span></span>
-               <h3>The Algorithm</h3>
-               <p>A specific algorithm for extracting the most important points of the original document, using extraction based summarization. </p>
-               <a href="https://github.com/shubham7jain/precis" class="button button-style1">Read More</a>
-            </section>
-         </div>
       </div>
       </div>
       <!-- Footer -->
@@ -215,7 +171,7 @@
       <!-- Copyright -->
       <div id="copyright">
          <div class="container">
-            © All Copyrights Reserved by <a href="http://precis.com">precis.com</a>, College Station, 77840, Contact us: <a href="mailto:precis@tamu.edu">precis@tamu.edu</a>
+            © All Copyrights Reserved by <a href="https://github.com/adityangud/Recommender_for_event_based_social_network"> WhatTheRec</a>, College Station, 77840, Contact us: <a href="mailto:whattherec@tamu.edu">whattherec@tamu.edu</a>
          </div>
       </div>
    </body>
