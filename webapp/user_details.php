@@ -158,26 +158,6 @@
          <center>
          <p></p>
          <hr />
-         <div class="row">
-            <section class="4u">
-               <span class="pennant"><span class="fa fa-globe"></span></span>
-               <h3>Precis</h3>
-               <p>Summarize your articles, splitting the most important sentences and ranking a sentence based on importance.</p>
-               <a href="https://github.com/shubham7jain/precis" class="button button-style1">Read More</a>
-            </section>
-            <section class="4u">
-               <span class="pennant"><span class="fa fa-lock"></span></span>
-               <h3>API</h3>
-               <p>This tool is accessible by an API, integrate our api to generate summaries for a given text on your website or application.</p>
-               <a href="" target="_blank" class="button button-style1">Read More</a>
-            </section>
-            <section class="4u">
-               <span class="pennant"><span class="fa fa-globe"></span></span>
-               <h3>The Algorithm</h3>
-               <p>A specific algorithm for extracting the most important points of the original document, using extraction based summarization. </p>
-               <a href="https://github.com/shubham7jain/precis" class="button button-style1">Read More</a>
-            </section>
-         </div>
       </div>
       </div>
       <!-- Footer -->
@@ -194,7 +174,7 @@
       <!-- Copyright -->
       <div id="copyright">
          <div class="container">
-            © All Copyrights Reserved by <a href="http://precis.com">precis.com</a>, College Station, 77840, Contact us: <a href="mailto:precis@tamu.edu">precis@tamu.edu</a>
+            © All Copyrights Reserved by <a href="https://github.com/adityangud/Recommender_for_event_based_social_network"> WhatTheRec</a>, College Station, 77840, Contact us: <a href="mailto:whattherec@tamu.edu">whattherec@tamu.edu</a>
          </div>
       </div>
    </body>
